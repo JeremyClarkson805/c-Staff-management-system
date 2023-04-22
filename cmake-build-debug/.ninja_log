@@ -1,0 +1,8 @@
+# ninja log v5
+1	331	7038778643763609	CMakeFiles/base.dir/main.cpp.obj	f7c75db7a36cc21d
+332	468	7038778644820157	base.exe	14d153004fae55d8
+7	386	7038778566132692	CMakeFiles/base.dir/workerManger.cpp.obj	f8e283c9d5be746a
+1	442	7038790208600306	CMakeFiles/base.dir/main.cpp.obj	f7c75db7a36cc21d
+6	443	7038790208590309	CMakeFiles/base.dir/workerManger.cpp.obj	f8e283c9d5be746a
+10	444	7038790208610331	CMakeFiles/base.dir/employee.cpp.obj	4bfb0b62fb0fbb5c
+444	791	7038790211919641	base.exe	e6dc8dbbf9c510bd
