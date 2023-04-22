@@ -2,25 +2,23 @@
 // Created by 13442 on 2023/4/22.
 //
 
-#ifndef BASE_EMPLOYEE_H
-#define BASE_EMPLOYEE_H
 
 #pragma once
 #include<iostream>
 using namespace std;
 #include "worker.h"
 
-//å‘˜å·¥ç±»
+//Ô±¹¤Àà
 class Employee : public Worker
 {
 public:
     Employee(int id,string name,int dId);
-    //æ˜¾ç¤ºä¸ªäººä¿¡æ¯
-    virtual void showInfo();
-    //è·å–èŒå·¥å²—ä½åç§°
-    virtual string getDepName();
+    //ÏÔÊ¾¸öÈËĞÅÏ¢
+    virtual void ShowInfo();
+    //»ñÈ¡Ö°¹¤¸ÚÎ»Ãû³Æ
+    virtual string GetDeptName();
 };
 
 
 
-#endif //BASE_EMPLOYEE_H
+

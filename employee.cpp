@@ -11,15 +11,15 @@ Employee::Employee(int id, std::string name, int dId)
     this->m_DepId = dId;
 }
 
-void Employee::showInfo()
+void Employee::ShowInfo()
 {
-    cout<<"èŒå·¥ç¼–å·:"<<this->m_Id;
-    cout<<"\tèŒå·¥å§“å:"<<this->m_Name;
-    cout<<"\tå²—ä½:"<<this->getDepName();
-    cout<<"\tå²—ä½èŒè´£:å¬ç»ç†çš„è¯!!!"<<endl;
+    cout<<"Ö°¹¤±àºÅ:"<<this->m_Id;
+    cout<<"\tÖ°¹¤ÐÕÃû:"<<this->m_Name;
+    cout<<"\t¸ÚÎ»:"<<this->GetDeptName();
+    cout<<"\t¸ÚÎ»Ö°Ôð:Ìý¾­ÀíµÄ»°!!!"<<endl;
 }
 
-string Employee::getDepName()
+string Employee::GetDeptName()
 {
-    return string("å‘˜å·¥");
+    return string("Ô±¹¤");
 }

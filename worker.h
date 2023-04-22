@@ -2,32 +2,24 @@
 // Created by 13442 on 2023/4/22.
 //
 
-#ifndef BASE_WORKER_H
-#define BASE_WORKER_H
-
 #pragma once
 #include<iostream>
 #include<string>
 using namespace std;
 
-//èŒå·¥æŠ½è±¡åŸºç±»
+//Ö°¹¤³éÏó»ùÀà
 class Worker
 {
 public:
-    //æ˜¾ç¤ºä¸ªäººä¿¡æ¯
+    //ÏÔÊ¾¸öÈËĞÅÏ¢
     virtual void ShowInfo() = 0;
-    //è·å–å²—ä½ä¿¡æ¯
-    virtual string getDeptName() = 0;
-    int m_Id;//èŒå·¥ç¼–å·
-    string m_Name;//èŒå·¥å§“å
-    int m_DepId;//èŒå·¥æ‰€åœ¨éƒ¨é—¨ç¼–å·
+    //»ñÈ¡¸ÚÎ»ĞÅÏ¢
+    virtual string GetDeptName() = 0;
+    int m_Id;//Ö°¹¤±àºÅ
+    string m_Name;//Ö°¹¤ĞÕÃû
+    int m_DepId;//Ö°¹¤ËùÔÚ²¿ÃÅ±àºÅ
 };
 
 
 
 
-
-
-
-
-#endif //BASE_WORKER_H
