@@ -38,8 +38,20 @@ WorkerManager::WorkerManager()
         return;
     }
 
-    this->m_EmpNum = 0;
-    this->m_EmpArray = NULL;
+    //3.文件已存在,并且记录数据
+    int num = this->get_EmpNum();
+    cout<<"职工人数为:"<<num<<endl;
+    this->m_EmpNum = num;
+    this->m_EmpArray = new Worker * [this->m_EmpNum];//开辟空间
+//    this->m_EmpNum = 0;
+//    this->m_EmpArray = NULL;
+    this->init_Emp();//将文件中的数据存到数组中
+    for(int i=0;i<this->m_EmpNum;i++)
+    {
+        cout<<"职工编号:"<<this->m_EmpArray[i]->m_Id;
+        cout<<"\t姓名:"<<this->m_EmpArray[i]->m_Name;
+        cout<<"\t部门编号"<<this->m_EmpArray[i]->m_DepId<<endl;
+    }
 }
 
 void WorkerManager::Show_Menu()
@@ -140,6 +152,51 @@ void WorkerManager::save()
         ofs<<this->m_EmpArray[i]->m_DepId<<endl;
     }
     ofs.close();
+}
+
+int WorkerManager::get_EmpNum()
+{
+    ifstream ifs;
+    ifs.open(FILENAME,ios::in);//打开文件
+    int id;
+    string name;
+    int dId;
+    int num = 0;
+    while(ifs >> id && ifs>>name && ifs >>dId)
+    {
+        num ++;
+    }
+    return num;
+}
+
+void WorkerManager::init_Emp()
+{
+    ifstream ifs;
+    ifs.open(FILENAME,ios::in);
+    int id;
+    string name;
+    int dId;
+    int index = 0;
+    while(ifs>>id && ifs >> name && ifs >> dId)
+    {
+        Worker * worker = NULL;
+        if(dId = 1)//职工
+        {
+            worker = new Employee(id,name,dId);
+
+        }
+        if (dId = 2)//经理
+        {
+            worker = new Manger(id,name,dId);
+        }
+        if(dId = 3)//员工
+        {
+            worker = new Boss(id,name,dId);
+        }
+        this->m_EmpArray[index] = worker;
+        index++;
+    }
+    ifs.close();
 }
 
 
