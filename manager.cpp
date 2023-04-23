@@ -2,7 +2,7 @@
 // Created by 13442 on 2023/4/23.
 //
 
-#include "manger.h"
+#include "manager.h"
 
 Manger::Manger(int id, std::string name, int dId)
 {

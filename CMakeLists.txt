@@ -3,4 +3,4 @@ project(base)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(base main.cpp workerManger.h workerManger.cpp worker.h employee.h employee.cpp manger.h manger.cpp boss.h boss.cpp)
+add_executable(base main.cpp workerManger.h workerManger.cpp worker.h employee.h employee.cpp manager.h manager.cpp boss.h boss.cpp)

@@ -3,18 +3,27 @@
 //
 
 #pragma once//防止头文件重复包含
-#include<iostream>
+#include <iostream>
+#include <fstream>
+#include "worker.h"
+#include "employee.h"
+#include "manager.h"
+#include "boss.h"
+#define FILENAME "empFile.txt"
 using namespace std;
 
 class WorkerManager
 {
 public:
-    WorkerManager()
-    {}
+    WorkerManager();
     void Show_Menu();
     void ExitSystem();
-    ~WorkerManager()
-    {}
+    int m_EmpNum;//记录职工人数
+    Worker ** m_EmpArray;//职工数组指针
+    void Add_Emp();//添加员工
+    void save();//保存文件
+    bool m_FileIsEmpty;//判断文件是否为空的标志
+//    ~WorkerManager();
 };
 
 //#include "WorkerManger.cpp"

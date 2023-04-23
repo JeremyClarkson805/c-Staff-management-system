@@ -1,14 +1,11 @@
 # ninja log v5
-1	431	7039270727753843	CMakeFiles/base.dir/main.cpp.obj	f7c75db7a36cc21d
-426	550	7039271710978836	base.exe	22a23f31e8720035
-11	713	7039268251044272	CMakeFiles/base.dir/workerManger.cpp.obj	f8e283c9d5be746a
-15	715	7039268251057662	CMakeFiles/base.dir/employee.cpp.obj	4bfb0b62fb0fbb5c
-0	426	7039271709999555	CMakeFiles/base.dir/manger.cpp.obj	29af8c400f9266ed
-10	407	7039290888333428	CMakeFiles/base.dir/workerManger.cpp.obj	f8e283c9d5be746a
-15	410	7039290888353422	CMakeFiles/base.dir/boss.cpp.obj	afbca39c813ccb06
+479	649	7039538473339943	base.exe	22a2d9826a030502
+1	473	7039538471881029	CMakeFiles/base.dir/main.cpp.obj	f7c75db7a36cc21d
+11	478	7039538471942176	CMakeFiles/base.dir/workerManger.cpp.obj	f8e283c9d5be746a
 19	411	7039290888353422	CMakeFiles/base.dir/employee.cpp.obj	4bfb0b62fb0fbb5c
-6	411	7039290888363418	CMakeFiles/base.dir/manger.cpp.obj	29af8c400f9266ed
-1	323	7039290946280196	CMakeFiles/base.dir/main.cpp.obj	f7c75db7a36cc21d
-323	644	7039290949355727	base.exe	e7923a90e632d7cd
-1	494	7039291253640851	CMakeFiles/base.dir/boss.cpp.obj	afbca39c813ccb06
-495	624	7039291254677005	base.exe	e7923a90e632d7cd
+11	670	7039536571458830	CMakeFiles/base.dir/manger.cpp.obj	29af8c400f9266ed
+15	670	7039536571442369	CMakeFiles/base.dir/boss.cpp.obj	afbca39c813ccb06
+1	65	7039539190499591	build.ninja	517b5cf689c271d1
+6	476	7039538471907654	CMakeFiles/base.dir/manager.cpp.obj	d8025763efa160f9
+1	415	7039540113732979	CMakeFiles/base.dir/main.cpp.obj	f7c75db7a36cc21d
+415	532	7039540114663902	base.exe	22a2d9826a030502
