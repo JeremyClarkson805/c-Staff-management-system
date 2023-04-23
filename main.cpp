@@ -1,7 +1,9 @@
 #include <iostream>
 #include "WorkerManger.h"
-//#include "worker.h"
+#include "worker.h"
 #include "employee.h"
+#include "manger.h"
+#include "boss.h"
 using namespace std;
 
 
@@ -11,6 +13,13 @@ int main() {
     Worker *worker = NULL;
     worker = new Employee(1,"张三",01);
     worker->ShowInfo();
+
+    Manger *manger = new Manger(2,"李四",2);
+    manger->ShowInfo();
+
+    Boss *boss = new Boss(3,"star",3);
+    boss->ShowInfo();
+
 
 //    Worker *w = new Employee(1,"6+7",8);
 

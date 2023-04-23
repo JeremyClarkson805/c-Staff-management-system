@@ -2,7 +2,12 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/CMakeLists.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/employee.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/employee.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/main.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/manger.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/manger.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/worker.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/workerManger.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/workerManger.h" charset="GBK" />
   </component>

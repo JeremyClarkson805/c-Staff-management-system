@@ -70,6 +70,20 @@ build CMakeFiles\base.dir\employee.cpp.obj: CXX_COMPILER__base_Debug C$:\Users\1
   TARGET_COMPILE_PDB = CMakeFiles\base.dir\
   TARGET_PDB = base.pdb
 
+build CMakeFiles\base.dir\manger.cpp.obj: CXX_COMPILER__base_Debug C$:\Users\13442\Desktop\基于多态的职工管理系统\manger.cpp || cmake_object_order_depends_target_base
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  OBJECT_DIR = CMakeFiles\base.dir
+  OBJECT_FILE_DIR = CMakeFiles\base.dir
+  TARGET_COMPILE_PDB = CMakeFiles\base.dir\
+  TARGET_PDB = base.pdb
+
+build CMakeFiles\base.dir\boss.cpp.obj: CXX_COMPILER__base_Debug C$:\Users\13442\Desktop\基于多态的职工管理系统\boss.cpp || cmake_object_order_depends_target_base
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  OBJECT_DIR = CMakeFiles\base.dir
+  OBJECT_FILE_DIR = CMakeFiles\base.dir
+  TARGET_COMPILE_PDB = CMakeFiles\base.dir\
+  TARGET_PDB = base.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target base
@@ -78,7 +92,7 @@ build CMakeFiles\base.dir\employee.cpp.obj: CXX_COMPILER__base_Debug C$:\Users\1
 #############################################
 # Link the executable base.exe
 
-build base.exe: CXX_EXECUTABLE_LINKER__base_Debug CMakeFiles\base.dir\main.cpp.obj CMakeFiles\base.dir\workerManger.cpp.obj CMakeFiles\base.dir\employee.cpp.obj
+build base.exe: CXX_EXECUTABLE_LINKER__base_Debug CMakeFiles\base.dir\main.cpp.obj CMakeFiles\base.dir\workerManger.cpp.obj CMakeFiles\base.dir\employee.cpp.obj CMakeFiles\base.dir\manger.cpp.obj CMakeFiles\base.dir\boss.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
