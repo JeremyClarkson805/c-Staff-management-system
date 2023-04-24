@@ -35,8 +35,18 @@ public:
 
     void init_Emp();
 
-    void Show_Emp();
+    void Show_Emp();//显示职工
 
-//    ~WorkerManager();
+    int IsExist(int id);
+
+    void Del_Emp();//删除员工
+
+    void Mod_Emp();//修改职工函数
+
+    void Find_Emp();//查找职工
+
+    void Clean_File();//清空文件
+
+    ~WorkerManager();
 };
 
